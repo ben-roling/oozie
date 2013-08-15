@@ -98,7 +98,7 @@ public class V0JobServlet extends BaseJobServlet {
      * v0 service method to kill a job
      */
     @Override
-    protected void killJob(HttpServletRequest request, HttpServletResponse response) throws XServletException,
+    protected JSONObject killJob(HttpServletRequest request, HttpServletResponse response) throws XServletException,
             IOException {
         DagEngine dagEngine = Services.get().get(DagEngineService.class).getDagEngine(getUser(request),
                                                                                       getAuthToken(request));
@@ -110,6 +110,7 @@ public class V0JobServlet extends BaseJobServlet {
         catch (DagEngineException ex) {
             throw new XServletException(HttpServletResponse.SC_BAD_REQUEST, ex);
         }
+        return null;
     }
 
     /*
