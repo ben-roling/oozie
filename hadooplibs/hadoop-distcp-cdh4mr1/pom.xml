@@ -22,7 +22,7 @@
     <parent>
         <groupId>org.apache.oozie</groupId>
         <artifactId>oozie-main</artifactId>
-        <version>3.3.2-cdh4.6.0</version>
+        <version>3.3.2-cdh4.6.0-OOZIE-1476-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
     <groupId>org.apache.oozie</groupId>
